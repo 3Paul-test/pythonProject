@@ -8,7 +8,22 @@ def test_1(x,y):
         print('x小于y')
 
 
+def guess():
+    while True:
+        num1 = input('请输入数字：')
+        try:
+            num1 = int(num1)  # 尝试将输入转换为整数
+        except ValueError:
+            print('参数类型错误哦，请输入数字')
+            continue  # 继续下一次循环
+
+        if num1 > 50:
+            return '太大了'
+        elif num1 == 50:
+            return '正常'
+        elif num1 < 50:
+            return '太小了'
 
 
+print(guess())
 
-test_1(10,5)
