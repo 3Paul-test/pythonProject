@@ -1,5 +1,3 @@
-import requests
-
 
 def test_1(x,y):
     if x>y:
