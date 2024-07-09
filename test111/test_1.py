@@ -12,10 +12,10 @@ def guess():
     while True:
         num1 = input('请输入数字：')
         try:
-            num1 = int(num1)  # 尝试将输入转换为整数
+            num1 = int(num1)
         except ValueError:
             print('参数类型错误哦，请输入数字')
-            continue  # 继续下一次循环
+            continue
 
         if num1 > 50:
             return '太大了'
